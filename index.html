@@ -86,7 +86,15 @@ function makeBot() {
 function doResetBots() {
   console.log("resetBots");
   bots = [];
-  for (let i = 0; i < 1; i++) {
+  let bot0 = {};
+  bot0.x = 20;
+  bot0.y = 70;
+  bot0.r = 15;
+  bot0.dx = 0;
+  bot0.dy = 0;
+  bot0.theta = 0;
+  bots.push(bot0)
+  for (let i = 0; i < 0; i++) {
     bot = makeBot();
     bots.push(bot);
   }
